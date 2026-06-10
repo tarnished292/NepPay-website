@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 const STEPS = ["PENDING", "CALLBACK", "VERIFY", "PAID"];
 
@@ -217,6 +218,7 @@ export default function App() {
           built by @tarnished292
         </a>
       </footer>
+      <Analytics />
     </div>
   );
 }
